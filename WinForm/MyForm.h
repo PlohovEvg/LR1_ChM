@@ -85,7 +85,94 @@ namespace WinForm {
 	private: System::Windows::Forms::Button^  button3;
 	private: System::Windows::Forms::Button^  button2;
 	private: System::Windows::Forms::Button^  button1;
+	private: System::Windows::Forms::PictureBox^  pictureBox2;
+	private: System::Windows::Forms::TextBox^  Y2_Text2;
+	private: System::Windows::Forms::Label^  label4;
+	private: System::Windows::Forms::Label^  label11;
+	private: System::Windows::Forms::TextBox^  Y1_Text2;
+	private: System::Windows::Forms::TextBox^  X2_Text2;
+	private: System::Windows::Forms::Label^  label12;
+	private: System::Windows::Forms::Label^  label13;
+	private: System::Windows::Forms::TextBox^  X1_Text2;
+	private: System::Windows::Forms::Label^  label14;
+	private: System::Windows::Forms::TextBox^  b_Text2;
 	private: System::Windows::Forms::Button^  button4;
+	private: System::Windows::Forms::Button^  button5;
+	private: System::Windows::Forms::Button^  button6;
+	private: System::Windows::Forms::TextBox^  textBox7;
+	private: System::Windows::Forms::Label^  label15;
+	private: System::Windows::Forms::TextBox^  h_Text2;
+	private: System::Windows::Forms::Label^  label16;
+	private: System::Windows::Forms::TextBox^  Epsilon_Text2;
+	private: System::Windows::Forms::Label^  label17;
+	private: System::Windows::Forms::TextBox^  n_Text2;
+	private: System::Windows::Forms::Label^  label18;
+	private: System::Windows::Forms::TextBox^  U0_Text2;
+	private: System::Windows::Forms::DataGridView^  dataGridView2;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn1;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn2;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn3;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn4;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn5;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn6;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn7;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn8;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn9;
+	private: ZedGraph::ZedGraphControl^  zedGraphControl2;
+	private: System::Windows::Forms::TabPage^  tabPage4;
+	private: System::Windows::Forms::Label^  label20;
+private: System::Windows::Forms::TextBox^  U0_Text3;
+
+	private: System::Windows::Forms::Label^  label19;
+private: System::Windows::Forms::TextBox^  U2_Text;
+
+	private: System::Windows::Forms::PictureBox^  pictureBox3;
+	private: ZedGraph::ZedGraphControl^  PhasePortrait;
+	private: ZedGraph::ZedGraphControl^  U2Graph;
+	private: ZedGraph::ZedGraphControl^  U1Graph;
+private: System::Windows::Forms::Label^  label24;
+private: System::Windows::Forms::TextBox^  b_Text3;
+
+private: System::Windows::Forms::Label^  label23;
+private: System::Windows::Forms::TextBox^  h_Text3;
+
+private: System::Windows::Forms::Label^  label22;
+private: System::Windows::Forms::TextBox^  Epsilon_Text3;
+
+private: System::Windows::Forms::DataGridView^  dataGridView4;
+private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn19;
+private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn20;
+private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn21;
+private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn22;
+private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn23;
+private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn24;
+private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn25;
+private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn26;
+private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn27;
+private: System::Windows::Forms::DataGridView^  dataGridView3;
+private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn10;
+private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn11;
+private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn12;
+private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn13;
+private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn14;
+private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn15;
+private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn16;
+private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn17;
+private: System::Windows::Forms::DataGridViewTextBoxColumn^  dataGridViewTextBoxColumn18;
+private: System::Windows::Forms::Label^  label21;
+private: System::Windows::Forms::TextBox^  n_Text3;
+
+private: System::Windows::Forms::Label^  label28;
+private: System::Windows::Forms::TextBox^  c_Text;
+
+private: System::Windows::Forms::Label^  label27;
+private: System::Windows::Forms::TextBox^  a_Text;
+
+private: System::Windows::Forms::Label^  label26;
+private: System::Windows::Forms::Label^  label25;
+private: System::Windows::Forms::Button^  button7;
+private: System::Windows::Forms::TextBox^  textBox2;
+
 
 
 	private:
@@ -141,13 +228,98 @@ namespace WinForm {
 			this->SubUiVi = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->zedGraphControl1 = (gcnew ZedGraph::ZedGraphControl());
 			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
+			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
+			this->Y2_Text2 = (gcnew System::Windows::Forms::TextBox());
+			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->label11 = (gcnew System::Windows::Forms::Label());
+			this->Y1_Text2 = (gcnew System::Windows::Forms::TextBox());
+			this->X2_Text2 = (gcnew System::Windows::Forms::TextBox());
+			this->label12 = (gcnew System::Windows::Forms::Label());
+			this->label13 = (gcnew System::Windows::Forms::Label());
+			this->X1_Text2 = (gcnew System::Windows::Forms::TextBox());
+			this->label14 = (gcnew System::Windows::Forms::Label());
+			this->b_Text2 = (gcnew System::Windows::Forms::TextBox());
 			this->button4 = (gcnew System::Windows::Forms::Button());
+			this->button5 = (gcnew System::Windows::Forms::Button());
+			this->button6 = (gcnew System::Windows::Forms::Button());
+			this->textBox7 = (gcnew System::Windows::Forms::TextBox());
+			this->label15 = (gcnew System::Windows::Forms::Label());
+			this->h_Text2 = (gcnew System::Windows::Forms::TextBox());
+			this->label16 = (gcnew System::Windows::Forms::Label());
+			this->Epsilon_Text2 = (gcnew System::Windows::Forms::TextBox());
+			this->label17 = (gcnew System::Windows::Forms::Label());
+			this->n_Text2 = (gcnew System::Windows::Forms::TextBox());
+			this->label18 = (gcnew System::Windows::Forms::Label());
+			this->U0_Text2 = (gcnew System::Windows::Forms::TextBox());
+			this->dataGridView2 = (gcnew System::Windows::Forms::DataGridView());
+			this->dataGridViewTextBoxColumn1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn3 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn4 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn5 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn6 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn7 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn8 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn9 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->zedGraphControl2 = (gcnew ZedGraph::ZedGraphControl());
 			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
+			this->label24 = (gcnew System::Windows::Forms::Label());
+			this->b_Text3 = (gcnew System::Windows::Forms::TextBox());
+			this->label23 = (gcnew System::Windows::Forms::Label());
+			this->h_Text3 = (gcnew System::Windows::Forms::TextBox());
+			this->label22 = (gcnew System::Windows::Forms::Label());
+			this->Epsilon_Text3 = (gcnew System::Windows::Forms::TextBox());
+			this->dataGridView4 = (gcnew System::Windows::Forms::DataGridView());
+			this->dataGridViewTextBoxColumn19 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn20 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn21 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn22 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn23 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn24 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn25 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn26 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn27 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridView3 = (gcnew System::Windows::Forms::DataGridView());
+			this->dataGridViewTextBoxColumn10 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn11 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn12 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn13 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn14 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn15 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn16 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn17 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->dataGridViewTextBoxColumn18 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
+			this->label21 = (gcnew System::Windows::Forms::Label());
+			this->n_Text3 = (gcnew System::Windows::Forms::TextBox());
+			this->label20 = (gcnew System::Windows::Forms::Label());
+			this->U0_Text3 = (gcnew System::Windows::Forms::TextBox());
+			this->label19 = (gcnew System::Windows::Forms::Label());
+			this->U2_Text = (gcnew System::Windows::Forms::TextBox());
+			this->pictureBox3 = (gcnew System::Windows::Forms::PictureBox());
+			this->tabPage4 = (gcnew System::Windows::Forms::TabPage());
+			this->PhasePortrait = (gcnew ZedGraph::ZedGraphControl());
+			this->U2Graph = (gcnew ZedGraph::ZedGraphControl());
+			this->U1Graph = (gcnew ZedGraph::ZedGraphControl());
+			this->label25 = (gcnew System::Windows::Forms::Label());
+			this->label26 = (gcnew System::Windows::Forms::Label());
+			this->label27 = (gcnew System::Windows::Forms::Label());
+			this->a_Text = (gcnew System::Windows::Forms::TextBox());
+			this->label28 = (gcnew System::Windows::Forms::Label());
+			this->c_Text = (gcnew System::Windows::Forms::TextBox());
+			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
+			this->button7 = (gcnew System::Windows::Forms::Button());
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->tabPage2->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView2))->BeginInit();
+			this->tabPage3->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView4))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView3))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->BeginInit();
+			this->tabPage4->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// tabControl1
@@ -155,6 +327,7 @@ namespace WinForm {
 			this->tabControl1->Controls->Add(this->tabPage1);
 			this->tabControl1->Controls->Add(this->tabPage2);
 			this->tabControl1->Controls->Add(this->tabPage3);
+			this->tabControl1->Controls->Add(this->tabPage4);
 			this->tabControl1->Location = System::Drawing::Point(0, 2);
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->SelectedIndex = 0;
@@ -398,7 +571,7 @@ namespace WinForm {
 			// pictureBox1
 			// 
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(3, 6);
+			this->pictureBox1->Location = System::Drawing::Point(13, 6);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(343, 97);
 			this->pictureBox1->TabIndex = 19;
@@ -501,7 +674,31 @@ namespace WinForm {
 			// 
 			// tabPage2
 			// 
+			this->tabPage2->Controls->Add(this->pictureBox2);
+			this->tabPage2->Controls->Add(this->Y2_Text2);
+			this->tabPage2->Controls->Add(this->label4);
+			this->tabPage2->Controls->Add(this->label11);
+			this->tabPage2->Controls->Add(this->Y1_Text2);
+			this->tabPage2->Controls->Add(this->X2_Text2);
+			this->tabPage2->Controls->Add(this->label12);
+			this->tabPage2->Controls->Add(this->label13);
+			this->tabPage2->Controls->Add(this->X1_Text2);
+			this->tabPage2->Controls->Add(this->label14);
+			this->tabPage2->Controls->Add(this->b_Text2);
 			this->tabPage2->Controls->Add(this->button4);
+			this->tabPage2->Controls->Add(this->button5);
+			this->tabPage2->Controls->Add(this->button6);
+			this->tabPage2->Controls->Add(this->textBox7);
+			this->tabPage2->Controls->Add(this->label15);
+			this->tabPage2->Controls->Add(this->h_Text2);
+			this->tabPage2->Controls->Add(this->label16);
+			this->tabPage2->Controls->Add(this->Epsilon_Text2);
+			this->tabPage2->Controls->Add(this->label17);
+			this->tabPage2->Controls->Add(this->n_Text2);
+			this->tabPage2->Controls->Add(this->label18);
+			this->tabPage2->Controls->Add(this->U0_Text2);
+			this->tabPage2->Controls->Add(this->dataGridView2);
+			this->tabPage2->Controls->Add(this->zedGraphControl2);
 			this->tabPage2->Location = System::Drawing::Point(4, 22);
 			this->tabPage2->Name = L"tabPage2";
 			this->tabPage2->Padding = System::Windows::Forms::Padding(3);
@@ -510,20 +707,317 @@ namespace WinForm {
 			this->tabPage2->Text = L"Основная задача 1";
 			this->tabPage2->UseVisualStyleBackColor = true;
 			// 
+			// pictureBox2
+			// 
+			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
+			this->pictureBox2->Location = System::Drawing::Point(6, 9);
+			this->pictureBox2->Name = L"pictureBox2";
+			this->pictureBox2->Size = System::Drawing::Size(350, 67);
+			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBox2->TabIndex = 63;
+			this->pictureBox2->TabStop = false;
+			// 
+			// Y2_Text2
+			// 
+			this->Y2_Text2->Location = System::Drawing::Point(396, 134);
+			this->Y2_Text2->Name = L"Y2_Text2";
+			this->Y2_Text2->Size = System::Drawing::Size(57, 20);
+			this->Y2_Text2->TabIndex = 62;
+			// 
+			// label4
+			// 
+			this->label4->AutoSize = true;
+			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label4->Location = System::Drawing::Point(356, 135);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(40, 16);
+			this->label4->TabIndex = 61;
+			this->label4->Text = L" Y2 = ";
+			// 
+			// label11
+			// 
+			this->label11->AutoSize = true;
+			this->label11->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label11->Location = System::Drawing::Point(356, 109);
+			this->label11->Name = L"label11";
+			this->label11->Size = System::Drawing::Size(40, 16);
+			this->label11->TabIndex = 60;
+			this->label11->Text = L" Y1 = ";
+			// 
+			// Y1_Text2
+			// 
+			this->Y1_Text2->Location = System::Drawing::Point(397, 108);
+			this->Y1_Text2->Name = L"Y1_Text2";
+			this->Y1_Text2->Size = System::Drawing::Size(57, 20);
+			this->Y1_Text2->TabIndex = 59;
+			// 
+			// X2_Text2
+			// 
+			this->X2_Text2->Location = System::Drawing::Point(396, 82);
+			this->X2_Text2->Name = L"X2_Text2";
+			this->X2_Text2->Size = System::Drawing::Size(57, 20);
+			this->X2_Text2->TabIndex = 58;
+			// 
+			// label12
+			// 
+			this->label12->AutoSize = true;
+			this->label12->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label12->Location = System::Drawing::Point(356, 83);
+			this->label12->Name = L"label12";
+			this->label12->Size = System::Drawing::Size(39, 16);
+			this->label12->TabIndex = 57;
+			this->label12->Text = L" X2 = ";
+			// 
+			// label13
+			// 
+			this->label13->AutoSize = true;
+			this->label13->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label13->Location = System::Drawing::Point(356, 59);
+			this->label13->Name = L"label13";
+			this->label13->Size = System::Drawing::Size(39, 16);
+			this->label13->TabIndex = 56;
+			this->label13->Text = L" X1 = ";
+			// 
+			// X1_Text2
+			// 
+			this->X1_Text2->Location = System::Drawing::Point(396, 56);
+			this->X1_Text2->Name = L"X1_Text2";
+			this->X1_Text2->Size = System::Drawing::Size(57, 20);
+			this->X1_Text2->TabIndex = 55;
+			// 
+			// label14
+			// 
+			this->label14->AutoSize = true;
+			this->label14->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label14->Location = System::Drawing::Point(216, 109);
+			this->label14->Name = L"label14";
+			this->label14->Size = System::Drawing::Size(32, 16);
+			this->label14->TabIndex = 54;
+			this->label14->Text = L" b = ";
+			// 
+			// b_Text2
+			// 
+			this->b_Text2->Location = System::Drawing::Point(253, 108);
+			this->b_Text2->Name = L"b_Text2";
+			this->b_Text2->Size = System::Drawing::Size(100, 20);
+			this->b_Text2->TabIndex = 53;
+			// 
 			// button4
 			// 
-			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button4->Location = System::Drawing::Point(329, 41);
+			this->button4->Location = System::Drawing::Point(460, 108);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(160, 48);
-			this->button4->TabIndex = 28;
-			this->button4->Text = L"Старт";
+			this->button4->TabIndex = 52;
+			this->button4->Text = L"Изменить масштаб от Y1 до Y2";
 			this->button4->UseVisualStyleBackColor = true;
-			this->button4->Click += gcnew System::EventHandler(this, &MyForm::button4_Click);
+			this->button4->Click += gcnew System::EventHandler(this, &MyForm::button4_Click_1);
+			// 
+			// button5
+			// 
+			this->button5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->button5->Location = System::Drawing::Point(460, 57);
+			this->button5->Name = L"button5";
+			this->button5->Size = System::Drawing::Size(160, 48);
+			this->button5->TabIndex = 51;
+			this->button5->Text = L"Изменить масштаб от X1 до X2";
+			this->button5->UseVisualStyleBackColor = true;
+			this->button5->Click += gcnew System::EventHandler(this, &MyForm::button5_Click);
+			// 
+			// button6
+			// 
+			this->button6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->button6->Location = System::Drawing::Point(459, 7);
+			this->button6->Name = L"button6";
+			this->button6->Size = System::Drawing::Size(160, 48);
+			this->button6->TabIndex = 50;
+			this->button6->Text = L"Старт";
+			this->button6->UseVisualStyleBackColor = true;
+			this->button6->Click += gcnew System::EventHandler(this, &MyForm::button6_Click);
+			// 
+			// textBox7
+			// 
+			this->textBox7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->textBox7->Location = System::Drawing::Point(625, 7);
+			this->textBox7->Multiline = true;
+			this->textBox7->Name = L"textBox7";
+			this->textBox7->ReadOnly = true;
+			this->textBox7->Size = System::Drawing::Size(360, 181);
+			this->textBox7->TabIndex = 49;
+			this->textBox7->Text = L"\r\n\r\n\r\n\r\n\r\n\r\n";
+			// 
+			// label15
+			// 
+			this->label15->AutoSize = true;
+			this->label15->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label15->Location = System::Drawing::Point(216, 83);
+			this->label15->Name = L"label15";
+			this->label15->Size = System::Drawing::Size(31, 16);
+			this->label15->TabIndex = 48;
+			this->label15->Text = L" h = ";
+			// 
+			// h_Text2
+			// 
+			this->h_Text2->Location = System::Drawing::Point(253, 82);
+			this->h_Text2->Name = L"h_Text2";
+			this->h_Text2->Size = System::Drawing::Size(100, 20);
+			this->h_Text2->TabIndex = 47;
+			// 
+			// label16
+			// 
+			this->label16->AutoSize = true;
+			this->label16->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label16->Location = System::Drawing::Point(71, 135);
+			this->label16->Name = L"label16";
+			this->label16->Size = System::Drawing::Size(28, 16);
+			this->label16->TabIndex = 46;
+			this->label16->Text = L" ε =";
+			// 
+			// Epsilon_Text2
+			// 
+			this->Epsilon_Text2->Location = System::Drawing::Point(105, 134);
+			this->Epsilon_Text2->Name = L"Epsilon_Text2";
+			this->Epsilon_Text2->Size = System::Drawing::Size(100, 20);
+			this->Epsilon_Text2->TabIndex = 45;
+			// 
+			// label17
+			// 
+			this->label17->AutoSize = true;
+			this->label17->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label17->Location = System::Drawing::Point(6, 108);
+			this->label17->Name = L"label17";
+			this->label17->Size = System::Drawing::Size(93, 16);
+			this->label17->TabIndex = 44;
+			this->label17->Text = L" Число шагов";
+			// 
+			// n_Text2
+			// 
+			this->n_Text2->Location = System::Drawing::Point(105, 108);
+			this->n_Text2->Name = L"n_Text2";
+			this->n_Text2->Size = System::Drawing::Size(100, 20);
+			this->n_Text2->TabIndex = 43;
+			// 
+			// label18
+			// 
+			this->label18->AutoSize = true;
+			this->label18->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label18->Location = System::Drawing::Point(58, 83);
+			this->label18->Name = L"label18";
+			this->label18->Size = System::Drawing::Size(41, 16);
+			this->label18->TabIndex = 42;
+			this->label18->Text = L" U0 = ";
+			// 
+			// U0_Text2
+			// 
+			this->U0_Text2->Location = System::Drawing::Point(105, 82);
+			this->U0_Text2->Name = L"U0_Text2";
+			this->U0_Text2->Size = System::Drawing::Size(100, 20);
+			this->U0_Text2->TabIndex = 41;
+			// 
+			// dataGridView2
+			// 
+			this->dataGridView2->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView2->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(9) {
+				this->dataGridViewTextBoxColumn1,
+					this->dataGridViewTextBoxColumn2, this->dataGridViewTextBoxColumn3, this->dataGridViewTextBoxColumn4, this->dataGridViewTextBoxColumn5,
+					this->dataGridViewTextBoxColumn6, this->dataGridViewTextBoxColumn7, this->dataGridViewTextBoxColumn8, this->dataGridViewTextBoxColumn9
+			});
+			this->dataGridView2->Location = System::Drawing::Point(3, 194);
+			this->dataGridView2->Name = L"dataGridView2";
+			this->dataGridView2->Size = System::Drawing::Size(434, 406);
+			this->dataGridView2->TabIndex = 3;
+			// 
+			// dataGridViewTextBoxColumn1
+			// 
+			this->dataGridViewTextBoxColumn1->HeaderText = L"i";
+			this->dataGridViewTextBoxColumn1->Name = L"dataGridViewTextBoxColumn1";
+			// 
+			// dataGridViewTextBoxColumn2
+			// 
+			this->dataGridViewTextBoxColumn2->HeaderText = L"Xi";
+			this->dataGridViewTextBoxColumn2->Name = L"dataGridViewTextBoxColumn2";
+			// 
+			// dataGridViewTextBoxColumn3
+			// 
+			this->dataGridViewTextBoxColumn3->HeaderText = L"Vi";
+			this->dataGridViewTextBoxColumn3->Name = L"dataGridViewTextBoxColumn3";
+			// 
+			// dataGridViewTextBoxColumn4
+			// 
+			this->dataGridViewTextBoxColumn4->HeaderText = L"V2i";
+			this->dataGridViewTextBoxColumn4->Name = L"dataGridViewTextBoxColumn4";
+			// 
+			// dataGridViewTextBoxColumn5
+			// 
+			this->dataGridViewTextBoxColumn5->HeaderText = L"Vi-V2i";
+			this->dataGridViewTextBoxColumn5->Name = L"dataGridViewTextBoxColumn5";
+			// 
+			// dataGridViewTextBoxColumn6
+			// 
+			this->dataGridViewTextBoxColumn6->HeaderText = L"ОЛП";
+			this->dataGridViewTextBoxColumn6->Name = L"dataGridViewTextBoxColumn6";
+			// 
+			// dataGridViewTextBoxColumn7
+			// 
+			this->dataGridViewTextBoxColumn7->HeaderText = L"hi";
+			this->dataGridViewTextBoxColumn7->Name = L"dataGridViewTextBoxColumn7";
+			// 
+			// dataGridViewTextBoxColumn8
+			// 
+			this->dataGridViewTextBoxColumn8->HeaderText = L"C1";
+			this->dataGridViewTextBoxColumn8->Name = L"dataGridViewTextBoxColumn8";
+			// 
+			// dataGridViewTextBoxColumn9
+			// 
+			this->dataGridViewTextBoxColumn9->HeaderText = L"C2";
+			this->dataGridViewTextBoxColumn9->Name = L"dataGridViewTextBoxColumn9";
+			// 
+			// zedGraphControl2
+			// 
+			this->zedGraphControl2->IsShowPointValues = false;
+			this->zedGraphControl2->Location = System::Drawing::Point(443, 194);
+			this->zedGraphControl2->Name = L"zedGraphControl2";
+			this->zedGraphControl2->PointValueFormat = L"G";
+			this->zedGraphControl2->Size = System::Drawing::Size(542, 406);
+			this->zedGraphControl2->TabIndex = 2;
 			// 
 			// tabPage3
 			// 
+			this->tabPage3->Controls->Add(this->button7);
+			this->tabPage3->Controls->Add(this->label28);
+			this->tabPage3->Controls->Add(this->c_Text);
+			this->tabPage3->Controls->Add(this->label27);
+			this->tabPage3->Controls->Add(this->a_Text);
+			this->tabPage3->Controls->Add(this->label26);
+			this->tabPage3->Controls->Add(this->label25);
+			this->tabPage3->Controls->Add(this->label24);
+			this->tabPage3->Controls->Add(this->b_Text3);
+			this->tabPage3->Controls->Add(this->label23);
+			this->tabPage3->Controls->Add(this->h_Text3);
+			this->tabPage3->Controls->Add(this->label22);
+			this->tabPage3->Controls->Add(this->Epsilon_Text3);
+			this->tabPage3->Controls->Add(this->dataGridView4);
+			this->tabPage3->Controls->Add(this->dataGridView3);
+			this->tabPage3->Controls->Add(this->label21);
+			this->tabPage3->Controls->Add(this->n_Text3);
+			this->tabPage3->Controls->Add(this->label20);
+			this->tabPage3->Controls->Add(this->U0_Text3);
+			this->tabPage3->Controls->Add(this->label19);
+			this->tabPage3->Controls->Add(this->U2_Text);
+			this->tabPage3->Controls->Add(this->pictureBox3);
 			this->tabPage3->Location = System::Drawing::Point(4, 22);
 			this->tabPage3->Name = L"tabPage3";
 			this->tabPage3->Padding = System::Windows::Forms::Padding(3);
@@ -532,6 +1026,364 @@ namespace WinForm {
 			this->tabPage3->Text = L"Основная задача 2";
 			this->tabPage3->UseVisualStyleBackColor = true;
 			// 
+			// label24
+			// 
+			this->label24->AutoSize = true;
+			this->label24->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label24->Location = System::Drawing::Point(155, 137);
+			this->label24->Name = L"label24";
+			this->label24->Size = System::Drawing::Size(32, 16);
+			this->label24->TabIndex = 56;
+			this->label24->Text = L" b = ";
+			// 
+			// b_Text3
+			// 
+			this->b_Text3->Location = System::Drawing::Point(192, 136);
+			this->b_Text3->Name = L"b_Text3";
+			this->b_Text3->Size = System::Drawing::Size(100, 20);
+			this->b_Text3->TabIndex = 55;
+			// 
+			// label23
+			// 
+			this->label23->AutoSize = true;
+			this->label23->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label23->Location = System::Drawing::Point(155, 111);
+			this->label23->Name = L"label23";
+			this->label23->Size = System::Drawing::Size(31, 16);
+			this->label23->TabIndex = 54;
+			this->label23->Text = L" h = ";
+			// 
+			// h_Text3
+			// 
+			this->h_Text3->Location = System::Drawing::Point(192, 110);
+			this->h_Text3->Name = L"h_Text3";
+			this->h_Text3->Size = System::Drawing::Size(100, 20);
+			this->h_Text3->TabIndex = 53;
+			// 
+			// label22
+			// 
+			this->label22->AutoSize = true;
+			this->label22->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label22->Location = System::Drawing::Point(366, 111);
+			this->label22->Name = L"label22";
+			this->label22->Size = System::Drawing::Size(28, 16);
+			this->label22->TabIndex = 52;
+			this->label22->Text = L" ε =";
+			// 
+			// Epsilon_Text3
+			// 
+			this->Epsilon_Text3->Location = System::Drawing::Point(400, 112);
+			this->Epsilon_Text3->Name = L"Epsilon_Text3";
+			this->Epsilon_Text3->Size = System::Drawing::Size(100, 20);
+			this->Epsilon_Text3->TabIndex = 51;
+			// 
+			// dataGridView4
+			// 
+			this->dataGridView4->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView4->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(9) {
+				this->dataGridViewTextBoxColumn19,
+					this->dataGridViewTextBoxColumn20, this->dataGridViewTextBoxColumn21, this->dataGridViewTextBoxColumn22, this->dataGridViewTextBoxColumn23,
+					this->dataGridViewTextBoxColumn24, this->dataGridViewTextBoxColumn25, this->dataGridViewTextBoxColumn26, this->dataGridViewTextBoxColumn27
+			});
+			this->dataGridView4->Location = System::Drawing::Point(496, 197);
+			this->dataGridView4->Name = L"dataGridView4";
+			this->dataGridView4->Size = System::Drawing::Size(479, 406);
+			this->dataGridView4->TabIndex = 50;
+			// 
+			// dataGridViewTextBoxColumn19
+			// 
+			this->dataGridViewTextBoxColumn19->HeaderText = L"i";
+			this->dataGridViewTextBoxColumn19->Name = L"dataGridViewTextBoxColumn19";
+			// 
+			// dataGridViewTextBoxColumn20
+			// 
+			this->dataGridViewTextBoxColumn20->HeaderText = L"Xi";
+			this->dataGridViewTextBoxColumn20->Name = L"dataGridViewTextBoxColumn20";
+			// 
+			// dataGridViewTextBoxColumn21
+			// 
+			this->dataGridViewTextBoxColumn21->HeaderText = L"Vi";
+			this->dataGridViewTextBoxColumn21->Name = L"dataGridViewTextBoxColumn21";
+			// 
+			// dataGridViewTextBoxColumn22
+			// 
+			this->dataGridViewTextBoxColumn22->HeaderText = L"V2i";
+			this->dataGridViewTextBoxColumn22->Name = L"dataGridViewTextBoxColumn22";
+			// 
+			// dataGridViewTextBoxColumn23
+			// 
+			this->dataGridViewTextBoxColumn23->HeaderText = L"Vi-V2i";
+			this->dataGridViewTextBoxColumn23->Name = L"dataGridViewTextBoxColumn23";
+			// 
+			// dataGridViewTextBoxColumn24
+			// 
+			this->dataGridViewTextBoxColumn24->HeaderText = L"ОЛП";
+			this->dataGridViewTextBoxColumn24->Name = L"dataGridViewTextBoxColumn24";
+			// 
+			// dataGridViewTextBoxColumn25
+			// 
+			this->dataGridViewTextBoxColumn25->HeaderText = L"hi";
+			this->dataGridViewTextBoxColumn25->Name = L"dataGridViewTextBoxColumn25";
+			// 
+			// dataGridViewTextBoxColumn26
+			// 
+			this->dataGridViewTextBoxColumn26->HeaderText = L"C1";
+			this->dataGridViewTextBoxColumn26->Name = L"dataGridViewTextBoxColumn26";
+			// 
+			// dataGridViewTextBoxColumn27
+			// 
+			this->dataGridViewTextBoxColumn27->HeaderText = L"C2";
+			this->dataGridViewTextBoxColumn27->Name = L"dataGridViewTextBoxColumn27";
+			// 
+			// dataGridView3
+			// 
+			this->dataGridView3->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView3->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(9) {
+				this->dataGridViewTextBoxColumn10,
+					this->dataGridViewTextBoxColumn11, this->dataGridViewTextBoxColumn12, this->dataGridViewTextBoxColumn13, this->dataGridViewTextBoxColumn14,
+					this->dataGridViewTextBoxColumn15, this->dataGridViewTextBoxColumn16, this->dataGridViewTextBoxColumn17, this->dataGridViewTextBoxColumn18
+			});
+			this->dataGridView3->Location = System::Drawing::Point(0, 197);
+			this->dataGridView3->Name = L"dataGridView3";
+			this->dataGridView3->Size = System::Drawing::Size(479, 406);
+			this->dataGridView3->TabIndex = 49;
+			// 
+			// dataGridViewTextBoxColumn10
+			// 
+			this->dataGridViewTextBoxColumn10->HeaderText = L"i";
+			this->dataGridViewTextBoxColumn10->Name = L"dataGridViewTextBoxColumn10";
+			// 
+			// dataGridViewTextBoxColumn11
+			// 
+			this->dataGridViewTextBoxColumn11->HeaderText = L"Xi";
+			this->dataGridViewTextBoxColumn11->Name = L"dataGridViewTextBoxColumn11";
+			// 
+			// dataGridViewTextBoxColumn12
+			// 
+			this->dataGridViewTextBoxColumn12->HeaderText = L"Vi";
+			this->dataGridViewTextBoxColumn12->Name = L"dataGridViewTextBoxColumn12";
+			// 
+			// dataGridViewTextBoxColumn13
+			// 
+			this->dataGridViewTextBoxColumn13->HeaderText = L"V2i";
+			this->dataGridViewTextBoxColumn13->Name = L"dataGridViewTextBoxColumn13";
+			// 
+			// dataGridViewTextBoxColumn14
+			// 
+			this->dataGridViewTextBoxColumn14->HeaderText = L"Vi-V2i";
+			this->dataGridViewTextBoxColumn14->Name = L"dataGridViewTextBoxColumn14";
+			// 
+			// dataGridViewTextBoxColumn15
+			// 
+			this->dataGridViewTextBoxColumn15->HeaderText = L"ОЛП";
+			this->dataGridViewTextBoxColumn15->Name = L"dataGridViewTextBoxColumn15";
+			// 
+			// dataGridViewTextBoxColumn16
+			// 
+			this->dataGridViewTextBoxColumn16->HeaderText = L"hi";
+			this->dataGridViewTextBoxColumn16->Name = L"dataGridViewTextBoxColumn16";
+			// 
+			// dataGridViewTextBoxColumn17
+			// 
+			this->dataGridViewTextBoxColumn17->HeaderText = L"C1";
+			this->dataGridViewTextBoxColumn17->Name = L"dataGridViewTextBoxColumn17";
+			// 
+			// dataGridViewTextBoxColumn18
+			// 
+			this->dataGridViewTextBoxColumn18->HeaderText = L"C2";
+			this->dataGridViewTextBoxColumn18->Name = L"dataGridViewTextBoxColumn18";
+			// 
+			// label21
+			// 
+			this->label21->AutoSize = true;
+			this->label21->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label21->Location = System::Drawing::Point(301, 86);
+			this->label21->Name = L"label21";
+			this->label21->Size = System::Drawing::Size(93, 16);
+			this->label21->TabIndex = 48;
+			this->label21->Text = L" Число шагов";
+			// 
+			// n_Text3
+			// 
+			this->n_Text3->Location = System::Drawing::Point(400, 86);
+			this->n_Text3->Name = L"n_Text3";
+			this->n_Text3->Size = System::Drawing::Size(100, 20);
+			this->n_Text3->TabIndex = 47;
+			// 
+			// label20
+			// 
+			this->label20->AutoSize = true;
+			this->label20->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label20->Location = System::Drawing::Point(2, 85);
+			this->label20->Name = L"label20";
+			this->label20->Size = System::Drawing::Size(41, 16);
+			this->label20->TabIndex = 46;
+			this->label20->Text = L" U0 = ";
+			// 
+			// U0_Text3
+			// 
+			this->U0_Text3->Location = System::Drawing::Point(49, 84);
+			this->U0_Text3->Name = L"U0_Text3";
+			this->U0_Text3->Size = System::Drawing::Size(100, 20);
+			this->U0_Text3->TabIndex = 45;
+			// 
+			// label19
+			// 
+			this->label19->AutoSize = true;
+			this->label19->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label19->Location = System::Drawing::Point(6, 111);
+			this->label19->Name = L"label19";
+			this->label19->Size = System::Drawing::Size(35, 16);
+			this->label19->TabIndex = 44;
+			this->label19->Text = L"U0\'=";
+			this->label19->Click += gcnew System::EventHandler(this, &MyForm::label19_Click);
+			// 
+			// U2_Text
+			// 
+			this->U2_Text->Location = System::Drawing::Point(49, 110);
+			this->U2_Text->Name = L"U2_Text";
+			this->U2_Text->Size = System::Drawing::Size(100, 20);
+			this->U2_Text->TabIndex = 43;
+			// 
+			// pictureBox3
+			// 
+			this->pictureBox3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox3.Image")));
+			this->pictureBox3->Location = System::Drawing::Point(6, 6);
+			this->pictureBox3->Name = L"pictureBox3";
+			this->pictureBox3->Size = System::Drawing::Size(544, 70);
+			this->pictureBox3->SizeMode = System::Windows::Forms::PictureBoxSizeMode::AutoSize;
+			this->pictureBox3->TabIndex = 0;
+			this->pictureBox3->TabStop = false;
+			// 
+			// tabPage4
+			// 
+			this->tabPage4->Controls->Add(this->textBox2);
+			this->tabPage4->Controls->Add(this->PhasePortrait);
+			this->tabPage4->Controls->Add(this->U2Graph);
+			this->tabPage4->Controls->Add(this->U1Graph);
+			this->tabPage4->Location = System::Drawing::Point(4, 22);
+			this->tabPage4->Name = L"tabPage4";
+			this->tabPage4->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage4->Size = System::Drawing::Size(991, 633);
+			this->tabPage4->TabIndex = 3;
+			this->tabPage4->Text = L"Графики и справка";
+			this->tabPage4->UseVisualStyleBackColor = true;
+			// 
+			// PhasePortrait
+			// 
+			this->PhasePortrait->IsShowPointValues = false;
+			this->PhasePortrait->Location = System::Drawing::Point(480, 224);
+			this->PhasePortrait->Name = L"PhasePortrait";
+			this->PhasePortrait->PointValueFormat = L"G";
+			this->PhasePortrait->Size = System::Drawing::Size(495, 379);
+			this->PhasePortrait->TabIndex = 3;
+			// 
+			// U2Graph
+			// 
+			this->U2Graph->IsShowPointValues = false;
+			this->U2Graph->Location = System::Drawing::Point(-4, 305);
+			this->U2Graph->Name = L"U2Graph";
+			this->U2Graph->PointValueFormat = L"G";
+			this->U2Graph->Size = System::Drawing::Size(429, 298);
+			this->U2Graph->TabIndex = 5;
+			// 
+			// U1Graph
+			// 
+			this->U1Graph->IsShowPointValues = false;
+			this->U1Graph->Location = System::Drawing::Point(0, 0);
+			this->U1Graph->Name = L"U1Graph";
+			this->U1Graph->PointValueFormat = L"G";
+			this->U1Graph->Size = System::Drawing::Size(415, 315);
+			this->U1Graph->TabIndex = 4;
+			// 
+			// label25
+			// 
+			this->label25->AutoSize = true;
+			this->label25->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label25->Location = System::Drawing::Point(85, 170);
+			this->label25->Name = L"label25";
+			this->label25->Size = System::Drawing::Size(247, 24);
+			this->label25->TabIndex = 57;
+			this->label25->Text = L"Таблица для f1(x,u1,u2)=u2";
+			// 
+			// label26
+			// 
+			this->label26->AutoSize = true;
+			this->label26->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label26->Location = System::Drawing::Point(594, 170);
+			this->label26->Name = L"label26";
+			this->label26->Size = System::Drawing::Size(319, 24);
+			this->label26->TabIndex = 58;
+			this->label26->Text = L"Таблица для f2(x,u1,u2)=-a*u2+c*u1\r\n";
+			// 
+			// label27
+			// 
+			this->label27->AutoSize = true;
+			this->label27->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label27->Location = System::Drawing::Point(12, 137);
+			this->label27->Name = L"label27";
+			this->label27->Size = System::Drawing::Size(32, 16);
+			this->label27->TabIndex = 60;
+			this->label27->Text = L" a = ";
+			// 
+			// a_Text
+			// 
+			this->a_Text->Location = System::Drawing::Point(49, 136);
+			this->a_Text->Name = L"a_Text";
+			this->a_Text->Size = System::Drawing::Size(100, 20);
+			this->a_Text->TabIndex = 59;
+			// 
+			// label28
+			// 
+			this->label28->AutoSize = true;
+			this->label28->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label28->Location = System::Drawing::Point(155, 85);
+			this->label28->Name = L"label28";
+			this->label28->Size = System::Drawing::Size(31, 16);
+			this->label28->TabIndex = 62;
+			this->label28->Text = L" c = ";
+			// 
+			// c_Text
+			// 
+			this->c_Text->Location = System::Drawing::Point(192, 84);
+			this->c_Text->Name = L"c_Text";
+			this->c_Text->Size = System::Drawing::Size(100, 20);
+			this->c_Text->TabIndex = 61;
+			// 
+			// textBox2
+			// 
+			this->textBox2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->textBox2->Location = System::Drawing::Point(431, 6);
+			this->textBox2->Multiline = true;
+			this->textBox2->Name = L"textBox2";
+			this->textBox2->ReadOnly = true;
+			this->textBox2->Size = System::Drawing::Size(554, 212);
+			this->textBox2->TabIndex = 50;
+			this->textBox2->Text = L"\r\n\r\n\r\n\r\n\r\n\r\n";
+			// 
+			// button7
+			// 
+			this->button7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->button7->Location = System::Drawing::Point(660, 79);
+			this->button7->Name = L"button7";
+			this->button7->Size = System::Drawing::Size(160, 48);
+			this->button7->TabIndex = 63;
+			this->button7->Text = L"Старт";
+			this->button7->UseVisualStyleBackColor = true;
+			this->button7->Click += gcnew System::EventHandler(this, &MyForm::button7_Click);
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -539,13 +1391,22 @@ namespace WinForm {
 			this->ClientSize = System::Drawing::Size(991, 655);
 			this->Controls->Add(this->tabControl1);
 			this->Name = L"MyForm";
-			this->Text = L"MyForm";
 			this->tabControl1->ResumeLayout(false);
 			this->tabPage1->ResumeLayout(false);
 			this->tabPage1->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
 			this->tabPage2->ResumeLayout(false);
+			this->tabPage2->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView2))->EndInit();
+			this->tabPage3->ResumeLayout(false);
+			this->tabPage3->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView4))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView3))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->EndInit();
+			this->tabPage4->ResumeLayout(false);
+			this->tabPage4->PerformLayout();
 			this->ResumeLayout(false);
 
 		}
@@ -687,7 +1548,10 @@ private: System::Void button1_Click_1(System::Object^  sender, System::EventArgs
 				dataGridView1->Rows[i]->Cells[10]->Value = abs(u-vplus1);
 
 				h = 2 * h;
-				c2++;
+				if (i != n - 1)
+				{
+					c2++;
+				}
 				v = vplus1;
 			}
 			else
@@ -702,7 +1566,7 @@ private: System::Void button1_Click_1(System::Object^  sender, System::EventArgs
 				if (h < minH)
 				{
 					minH = h;
-					xminH = h;
+					xminH = x;
 				}
 				if (abs(S) > maxS)
 				{
@@ -801,6 +1665,548 @@ private: System::Void button1_Click_1(System::Object^  sender, System::EventArgs
 	ref += str;
 	ref += "\r\n";
 	textBox1->Text = gcnew String(ref.c_str());
+}
+private: System::Void button5_Click(System::Object^  sender, System::EventArgs^  e) 
+{
+	GraphPane^ panel = zedGraphControl2->GraphPane;
+	double X1 = Convert::ToDouble(X1_Text2->Text);
+	double X2 = Convert::ToDouble(X2_Text2->Text);
+
+	panel->XAxis->Min = X1;
+	panel->XAxis->Max = X2;
+
+	zedGraphControl2->AxisChange();
+	zedGraphControl2->Invalidate();
+}
+private: System::Void button4_Click_1(System::Object^  sender, System::EventArgs^  e) 
+{
+	GraphPane^ panel = zedGraphControl2->GraphPane;
+	double Y1 = Convert::ToDouble(Y1_Text2->Text);
+	double Y2 = Convert::ToDouble(Y2_Text2->Text);
+
+	panel->YAxis->Min = Y1;
+	panel->YAxis->Max = Y2;
+
+	zedGraphControl2->AxisChange();
+	zedGraphControl2->Invalidate();
+}
+private: System::Void button6_Click(System::Object^  sender, System::EventArgs^  e) 
+{
+	GraphPane^ panel = zedGraphControl2->GraphPane;
+	panel->CurveList->Clear();
+
+	PointPairList^ f_list = gcnew PointPairList();
+
+	double x = 0.0;
+	double v = Convert::ToDouble(U0_Text2->Text);
+	double h = Convert::ToDouble(h_Text2->Text);
+	double Epsilon = Convert::ToDouble(Epsilon_Text2->Text);
+	//double b = Convert::ToDouble(b_Text2->Text);
+	double vplus1;
+	double vcap;
+	double S;
+	int n = Convert::ToInt32(n_Text2->Text);
+	int i;
+	int c1 = 0, c2 = 0;
+	int k;
+	double maxH = h, minH = h, maxS = 0.0, xmaxH = 0.0, xminH = 0.0;
+	string ref = "";
+
+	double xmin_limit = x - 0.05;
+
+	dataGridView2->Rows->Clear();
+
+	for (i = 0; i < n; i++)
+	{	
+		f_list->Add(x, v);
+		
+		if (i != 0)
+		{
+			vplus1 = RK4(x, v, h, 2);
+			vcap = Vn1cap(x, v, h, 2);
+			S = CS(vcap, vplus1);
+			k = LPControl(S, Epsilon);
+			if (k == -1)
+			{
+				while (k == -1)
+				{
+					h = h*0.5;
+					c1++;
+					vplus1 = RK4(x, v, h, 2);
+					vcap = Vn1cap(x, v, h, 2);
+					S = CS(vcap, vplus1);
+					k = LPControl(S, Epsilon);
+				}
+			}
+			if (k == 1)
+			{
+				x = xInc(x, h);
+
+				if (h > maxH)
+				{
+					maxH = h;
+					xmaxH = x;
+				}
+				if (h < minH)
+				{
+					minH = h;
+					xminH = x;
+				}
+				if (abs(S) > maxS)
+				{
+					maxS = S;
+				}				
+
+				dataGridView2->Rows->Add();
+				dataGridView2->Rows[i]->Cells[0]->Value = i;
+				dataGridView2->Rows[i]->Cells[1]->Value = x;
+				dataGridView2->Rows[i]->Cells[2]->Value = vplus1;
+				dataGridView2->Rows[i]->Cells[3]->Value = vcap;
+				dataGridView2->Rows[i]->Cells[4]->Value = vplus1 - vcap;
+				dataGridView2->Rows[i]->Cells[5]->Value = S;
+				dataGridView2->Rows[i]->Cells[6]->Value = h;
+				dataGridView2->Rows[i]->Cells[7]->Value = c1;
+				dataGridView2->Rows[i]->Cells[8]->Value = c2;				
+
+				h = 2 * h;
+				if (i != n - 1)
+				{
+					c2++;
+				}
+				v = vplus1;
+			}
+			else
+			{
+				x = xInc(x, h);
+
+				if (h > maxH)
+				{
+					maxH = h;
+					xmaxH = x;
+				}
+				if (h < minH)
+				{
+					minH = h;
+					xminH = x;
+				}
+				if (abs(S) > maxS)
+				{
+					maxS = S;
+				}				
+
+				dataGridView2->Rows->Add();
+				dataGridView2->Rows[i]->Cells[0]->Value = i;
+				dataGridView2->Rows[i]->Cells[1]->Value = x;
+				dataGridView2->Rows[i]->Cells[2]->Value = vplus1;
+				dataGridView2->Rows[i]->Cells[3]->Value = vcap;
+				dataGridView2->Rows[i]->Cells[4]->Value = vplus1 - vcap;
+				dataGridView2->Rows[i]->Cells[5]->Value = S;
+				dataGridView2->Rows[i]->Cells[6]->Value = h;
+				dataGridView2->Rows[i]->Cells[7]->Value = c1;
+				dataGridView2->Rows[i]->Cells[8]->Value = c2;
+
+				v = vcap;
+			}
+		}
+		else
+		{
+			vcap = v;
+			S = 0.0;
+
+			dataGridView2->Rows->Add();
+			dataGridView2->Rows[i]->Cells[0]->Value = i;
+			dataGridView2->Rows[i]->Cells[1]->Value = x;
+			dataGridView2->Rows[i]->Cells[2]->Value = vplus1;
+			dataGridView2->Rows[i]->Cells[3]->Value = vcap;
+			dataGridView2->Rows[i]->Cells[4]->Value = vplus1 - vcap;
+			dataGridView2->Rows[i]->Cells[5]->Value = S;
+			dataGridView2->Rows[i]->Cells[6]->Value = h;
+			dataGridView2->Rows[i]->Cells[7]->Value = c1;
+			dataGridView2->Rows[i]->Cells[8]->Value = c2;
+		}
+	}
+
+	double xmax_limit = x + 0.05;
+
+	LineItem Curve = panel->AddCurve("Численное решение", f_list, Color::Red, SymbolType::None);	
+
+	panel->XAxis->Min = xmin_limit;
+	panel->XAxis->Max = xmax_limit;
+
+	zedGraphControl2->AxisChange();
+	zedGraphControl2->Invalidate();
+
+	char str[10];
+
+	ref += "Справка\r\n";
+	ref += "n=";
+	sprintf_s(str, "%d", n);
+	ref += str;
+	ref += "\r\n";
+	ref += "max|ОЛП|=";
+	sprintf_s(str, "%.6lf", maxS);
+	ref += str;
+	ref += "\r\n";
+	ref += "Общее число удвоений шага=";
+	sprintf_s(str, "%d", c2);
+	ref += str;
+	ref += ", Общее число деления шага=";
+	sprintf_s(str, "%d", c1);
+	ref += str;
+	ref += "\r\n";
+	ref += "max hi=";
+	sprintf_s(str, "%.6lf", maxH);
+	ref += str;
+	ref += " при x=";
+	sprintf_s(str, "%.4lf", xmaxH);
+	ref += str;
+	ref += "\r\n";
+	ref += "min hi=";
+	sprintf_s(str, "%.6lf", minH);
+	ref += str;
+	ref += " при x=";
+	sprintf_s(str, "%.4lf", xminH);
+	ref += str;
+	ref += "\r\n";
+	textBox7->Text = gcnew String(ref.c_str());
+}
+private: System::Void label19_Click(System::Object^  sender, System::EventArgs^  e) {
+}
+private: System::Void button7_Click(System::Object^  sender, System::EventArgs^  e) 
+{
+	GraphPane^ panel1 = U1Graph->GraphPane;
+	GraphPane^ panel2 = U2Graph->GraphPane;
+	GraphPane^ panel3 = PhasePortrait->GraphPane;
+
+	panel1->CurveList->Clear();
+	panel2->CurveList->Clear();
+	panel3->CurveList->Clear();
+
+	PointPairList^ f1_list = gcnew PointPairList();
+	PointPairList^ f2_list = gcnew PointPairList();
+	PointPairList^ f3_list = gcnew PointPairList();
+
+	double x1 = 0.0;
+	double x2 = x1;
+	double v1, v2;
+	 v1 = Convert::ToDouble(U0_Text3->Text);
+	 v2 = Convert::ToDouble(U2_Text->Text);
+	double h1 = Convert::ToDouble(h_Text3->Text);
+	double h2 = h1;
+	double a = Convert::ToDouble(a_Text->Text);
+	double c = Convert::ToDouble(c_Text->Text);
+	double Epsilon = Convert::ToDouble(Epsilon_Text3->Text);
+	//double b = Convert::ToDouble(b_Text3->Text);
+	double v1plus1, v2plus1;
+	double v1cap, v2cap;
+	double S1, S2;
+	int n = Convert::ToInt32(n_Text3->Text);
+	int i;
+	int c11 = 0, c12 = 0, c21 = 0, c22 = 0;
+	int k1, k2;
+	double maxH1 = h1, minH1 = h1, maxS1 = 0.0, xmaxH1 = 0.0, xminH1 = 0.0, maxH2 = h2, minH2 = h2, maxS2 = 0.0, xmaxH2 = 0.0, xminH2 = 0.0;
+	string ref = "";
+
+	double xmin_limit1 = x1 - 0.05;
+	double xmin_limit2 = x2 - 0.05;
+
+	dataGridView3->Rows->Clear();
+	dataGridView4->Rows->Clear();
+
+	for (i = 0; i < n; i++)
+	{
+		f1_list->Add(x1, v1);
+		f2_list->Add(x2, v2);
+		f3_list->Add(x2, PhP(v1, v2, a, c));
+
+		if (i != 0)
+		{
+			v1plus1 = RK4System(x1, v1, v2, h1, a, c, 3);
+			v1cap = Vn1capSystem(x1, v1, v2, h1, a, c, 3);
+			S1 = CS(v1cap, v1plus1);
+			k1 = LPControl(S1, Epsilon);
+			if (k1 == -1)
+			{
+				while (k1 == -1)
+				{
+					h1 = h1*0.5;
+					c11++;
+					v1plus1 = RK4System(x1, v1, v2, h1, a, c, 3);
+					v1cap = Vn1capSystem(x1, v1, v2, h1, a, c, 3);
+					S1 = CS(v1cap, v1plus1);
+					k1 = LPControl(S1, Epsilon);
+				}
+			}
+			if (k1 == 1)
+			{
+				x1 = xInc(x1, h1);
+
+				if (h1 > maxH1)
+				{
+					maxH1 = h1;
+					xmaxH1 = x1;
+				}
+				if (h1 < minH1)
+				{
+					minH1 = h1;
+					xminH1 = x1;
+				}
+				if (abs(S1) > maxS1)
+				{
+					maxS1 = S1;
+				}
+
+				dataGridView3->Rows->Add();
+				dataGridView3->Rows[i]->Cells[0]->Value = i;
+				dataGridView3->Rows[i]->Cells[1]->Value = x1;
+				dataGridView3->Rows[i]->Cells[2]->Value = v1plus1;
+				dataGridView3->Rows[i]->Cells[3]->Value = v1cap;
+				dataGridView3->Rows[i]->Cells[4]->Value = v1plus1 - v1cap;
+				dataGridView3->Rows[i]->Cells[5]->Value = S1;
+				dataGridView3->Rows[i]->Cells[6]->Value = h1;
+				dataGridView3->Rows[i]->Cells[7]->Value = c11;
+				dataGridView3->Rows[i]->Cells[8]->Value = c12;
+
+				h1 = 2 * h1;
+				if (i != n - 1)
+				{
+					c12++;
+				}
+				v1 = v1plus1;
+			}
+			else
+			{
+				x1 = xInc(x1, h1);
+
+				if (h1 > maxH1)
+				{
+					maxH1 = h1;
+					xmaxH1 = x1;
+				}
+				if (h1 < minH1)
+				{
+					minH1 = h1;
+					xminH1 = h1;
+				}
+				if (abs(S1) > maxS1)
+				{
+					maxS1 = S1;
+				}
+
+				dataGridView3->Rows->Add();
+				dataGridView3->Rows[i]->Cells[0]->Value = i;
+				dataGridView3->Rows[i]->Cells[1]->Value = x1;
+				dataGridView3->Rows[i]->Cells[2]->Value = v1plus1;
+				dataGridView3->Rows[i]->Cells[3]->Value = v1cap;
+				dataGridView3->Rows[i]->Cells[4]->Value = v1plus1 - v1cap;
+				dataGridView3->Rows[i]->Cells[5]->Value = S1;
+				dataGridView3->Rows[i]->Cells[6]->Value = h1;
+				dataGridView3->Rows[i]->Cells[7]->Value = c11;
+				dataGridView3->Rows[i]->Cells[8]->Value = c12;
+
+				v1 = v1cap;
+			}
+
+
+			v2plus1 = RK4System(x2, v1, v2, h2, a, c, 4);
+			v2cap = Vn1capSystem(x2, v1, v2, h2, a, c, 4);
+			S2 = CS(v2cap, v2plus1);
+			k2 = LPControl(S2, Epsilon);
+			if (k2 == -1)
+			{
+				while (k2 == -1)
+				{
+					h2 = h2*0.5;
+					c21++;
+					v2plus1 = RK4System(x2, v1, v2, h2, a, c, 4);
+					v2cap = Vn1capSystem(x2, v1, v2, h2, a, c, 4);
+					S2 = CS(v2cap, v2plus1);
+					k2 = LPControl(S2, Epsilon);
+				}
+			}
+			if (k2 == 1)
+			{
+				x2 = xInc(x2, h2);
+
+				if (h2 > maxH2)
+				{
+					maxH2 = h2;
+					xmaxH2 = x2;
+				}
+				if (h2 < minH2)
+				{
+					minH2 = h2;
+					xminH2 = x2;
+				}
+				if (abs(S2) > maxS2)
+				{
+					maxS2 = S2;
+				}
+
+				dataGridView4->Rows->Add();
+				dataGridView4->Rows[i]->Cells[0]->Value = i;
+				dataGridView4->Rows[i]->Cells[1]->Value = x2;
+				dataGridView4->Rows[i]->Cells[2]->Value = v2plus1;
+				dataGridView4->Rows[i]->Cells[3]->Value = v2cap;
+				dataGridView4->Rows[i]->Cells[4]->Value = v2plus1 - v2cap;
+				dataGridView4->Rows[i]->Cells[5]->Value = S2;
+				dataGridView4->Rows[i]->Cells[6]->Value = h2;
+				dataGridView4->Rows[i]->Cells[7]->Value = c21;
+				dataGridView4->Rows[i]->Cells[8]->Value = c22;
+
+				h2 = 2 * h2;
+				if (i != n - 1)
+				{
+					c22++;
+				}
+				v2 = v2plus1;
+			}
+			else
+			{
+				x2 = xInc(x2, h2);
+
+				if (h2 > maxH2)
+				{
+					maxH2 = h2;
+					xmaxH2 = x2;
+				}
+				if (h2 < minH2)
+				{
+					minH2 = h2;
+					xminH2 = h2;
+				}
+				if (abs(S2) > maxS2)
+				{
+					maxS2 = S2;
+				}
+
+				dataGridView4->Rows->Add();
+				dataGridView4->Rows[i]->Cells[0]->Value = i;
+				dataGridView4->Rows[i]->Cells[1]->Value = x2;
+				dataGridView4->Rows[i]->Cells[2]->Value = v2plus1;
+				dataGridView4->Rows[i]->Cells[3]->Value = v2cap;
+				dataGridView4->Rows[i]->Cells[4]->Value = v2plus1 - v2cap;
+				dataGridView4->Rows[i]->Cells[5]->Value = S2;
+				dataGridView4->Rows[i]->Cells[6]->Value = h2;
+				dataGridView4->Rows[i]->Cells[7]->Value = c21;
+				dataGridView4->Rows[i]->Cells[8]->Value = c22;
+
+				v2 = v2cap;
+			}
+		}
+		else
+		{
+			v1cap = v1;
+			S1 = 0.0;
+
+			dataGridView3->Rows->Add();
+			dataGridView3->Rows[i]->Cells[0]->Value = i;
+			dataGridView3->Rows[i]->Cells[1]->Value = x1;
+			dataGridView3->Rows[i]->Cells[2]->Value = v1plus1;
+			dataGridView3->Rows[i]->Cells[3]->Value = v1cap;
+			dataGridView3->Rows[i]->Cells[4]->Value = v1plus1 - v1cap;
+			dataGridView3->Rows[i]->Cells[5]->Value = S1;
+			dataGridView3->Rows[i]->Cells[6]->Value = h1;
+			dataGridView3->Rows[i]->Cells[7]->Value = c11;
+			dataGridView3->Rows[i]->Cells[8]->Value = c12;
+
+			v2cap = v2;
+			S2 = 0.0;
+
+			dataGridView4->Rows->Add();
+			dataGridView4->Rows[i]->Cells[0]->Value = i;
+			dataGridView4->Rows[i]->Cells[1]->Value = x2;
+			dataGridView4->Rows[i]->Cells[2]->Value = v2plus1;
+			dataGridView4->Rows[i]->Cells[3]->Value = v2cap;
+			dataGridView4->Rows[i]->Cells[4]->Value = v2plus1 - v2cap;
+			dataGridView4->Rows[i]->Cells[5]->Value = S2;
+			dataGridView4->Rows[i]->Cells[6]->Value = h2;
+			dataGridView4->Rows[i]->Cells[7]->Value = c21;
+			dataGridView4->Rows[i]->Cells[8]->Value = c22;
+		}
+	}
+
+	double xmax_limit1 = x1 + 0.05;
+	double xmax_limit2 = x2 + 0.05;
+
+	LineItem Curve1 = panel1->AddCurve("Численное решение U1(x)", f1_list, Color::Red, SymbolType::None);
+	LineItem Curve2 = panel2->AddCurve("Численное решение U2(x)", f2_list, Color::Blue, SymbolType::None);
+	LineItem Curve3 = panel3->AddCurve("Фазовый портрет", f3_list, Color::Black, SymbolType::None);
+
+	panel1->XAxis->Min = xmin_limit1;
+	panel1->XAxis->Max = xmax_limit1;
+
+	panel2->XAxis->Min = xmin_limit2;
+	panel2->XAxis->Max = xmax_limit2;
+
+	panel3->XAxis->Min = xmin_limit2;
+	panel3->XAxis->Max = xmax_limit2;
+
+	U1Graph->AxisChange();
+	U1Graph->Invalidate();
+
+	U2Graph->AxisChange();
+	U2Graph->Invalidate();
+
+	PhasePortrait->AxisChange();
+	PhasePortrait->Invalidate();
+
+	char str[10];
+
+	ref += "Справка\r\n";
+	ref += "n=";
+	sprintf_s(str, "%d", n);
+	ref += str;
+	ref += "\r\n";
+	ref += "max|ОЛП1|=";
+	sprintf_s(str, "%.6lf", maxS1);
+	ref += str;
+	ref += " max|ОЛП2|=";
+	sprintf_s(str, "%.6lf", maxS2);
+	ref += "\r\n";
+	ref += "Общее число удвоений шага_1=";
+	sprintf_s(str, "%d", c12);
+	ref += str;
+	ref += ", Общее число деления шага_1=";
+	sprintf_s(str, "%d", c11);
+	ref += str;
+	ref += "\r\n";
+	ref += "Общее число удвоений шага_2=";
+	sprintf_s(str, "%d", c22);
+	ref += str;
+	ref += ", Общее число деления шага_2=";
+	sprintf_s(str, "%d", c21);
+	ref += str;
+	ref += "\r\n";
+	ref += "max h1i=";
+	sprintf_s(str, "%.6lf", maxH1);
+	ref += str;
+	ref += " при x1=";
+	sprintf_s(str, "%.4lf", xmaxH1);
+	ref += str;
+	ref += "\r\n";
+	ref += "max h2i=";
+	sprintf_s(str, "%.6lf", maxH2);
+	ref += str;
+	ref += " при x2=";
+	sprintf_s(str, "%.4lf", xmaxH2);
+	ref += str;
+	ref += "\r\n";
+	ref += "min h1i=";
+	sprintf_s(str, "%.6lf", minH1);
+	ref += str;
+	ref += " при x1=";
+	sprintf_s(str, "%.4lf", xminH1);
+	ref += str;
+	ref += "\r\n";
+	ref += "min h2i=";
+	sprintf_s(str, "%.6lf", minH2);
+	ref += str;
+	ref += " при x2=";
+	sprintf_s(str, "%.4lf", xminH2);
+	ref += str;
+	ref += "\r\n";
+	textBox2->Text = gcnew String(ref.c_str());
 }
 };
 }
