@@ -1155,7 +1155,7 @@ private: System::Windows::Forms::TextBox^  X1_Text3;
 			this->b_Text3->Name = L"b_Text3";
 			this->b_Text3->Size = System::Drawing::Size(100, 20);
 			this->b_Text3->TabIndex = 55;
-			this->b_Text3->Text = L"100";
+			this->b_Text3->Text = L"10";
 			// 
 			// label23
 			// 
@@ -1193,7 +1193,7 @@ private: System::Windows::Forms::TextBox^  X1_Text3;
 			this->Epsilon_Text3->Name = L"Epsilon_Text3";
 			this->Epsilon_Text3->Size = System::Drawing::Size(100, 20);
 			this->Epsilon_Text3->TabIndex = 51;
-			this->Epsilon_Text3->Text = L"0,001";
+			this->Epsilon_Text3->Text = L"0,0001";
 			// 
 			// dataGridView3
 			// 
@@ -1364,7 +1364,7 @@ private: System::Windows::Forms::TextBox^  X1_Text3;
 			this->tabPage4->Padding = System::Windows::Forms::Padding(3);
 			this->tabPage4->Size = System::Drawing::Size(991, 633);
 			this->tabPage4->TabIndex = 3;
-			this->tabPage4->Text = L"Графики и справка";
+			this->tabPage4->Text = L"Графики ";
 			this->tabPage4->UseVisualStyleBackColor = true;
 			// 
 			// i_Text
@@ -1606,16 +1606,14 @@ private: System::Void button1_Click_1(System::Object^  sender, System::EventArgs
 	int c1 = 0, c2 = 0;
 	int k;
 	double maxH = h, minH = h, maxS = 0.0, xmaxH = 0.0, xminH = 0.0, maxSubUiVi = 0.0, xmaxSubUiVi = 0.0;
-	string ref="";
+	string ref = "";
 
 	double xmin_limit = x - 0.05;
 
 	dataGridView1->Rows->Clear();
 
 	for (i = 0; ((i < n)&&(x <= b)); i++)
-	{		
-		f_list->Add(x, v);
-
+	{			
 		if (i != 0)
 		{
 			vplus1 = RK4(x, v, h, 1);
@@ -1635,7 +1633,7 @@ private: System::Void button1_Click_1(System::Object^  sender, System::EventArgs
 			if (h < minH)
 			{
 				minH = h;
-				xminH = h;
+				xminH = x;
 			}
 			if (abs(S) > maxS)
 			{
@@ -1665,6 +1663,7 @@ private: System::Void button1_Click_1(System::Object^  sender, System::EventArgs
 			dataGridView1->Rows[i]->Cells[10]->Value = abs(u - vplus1);
 
 			v = vplus1;
+			f_list->Add(x, v);
 			//-------------------------------------------------------------------------
 			//С контролем локальной погрешности----------------------------------------
 			/*k = LPControl(S, Epsilon);
@@ -1695,7 +1694,7 @@ private: System::Void button1_Click_1(System::Object^  sender, System::EventArgs
 				if (h < minH)
 				{
 					minH = h;
-					xminH = h;
+					xminH = x;
 				}
 				if (abs(S) > maxS)
 				{
@@ -1729,7 +1728,8 @@ private: System::Void button1_Click_1(System::Object^  sender, System::EventArgs
 				{
 					c2++;
 				}
-				v = vplus1;
+				v = vcap;
+				f_list->Add(x, v);
 			}
 			else
 			{
@@ -1776,6 +1776,7 @@ private: System::Void button1_Click_1(System::Object^  sender, System::EventArgs
 				dataGridView1->Rows[i]->Cells[10]->Value = abs(u - vplus1);
 
 				v = vcap;
+				f_list->Add(x, v);
 			}*/
 			//--------------------------------------------------------------------
 		}
@@ -1783,6 +1784,7 @@ private: System::Void button1_Click_1(System::Object^  sender, System::EventArgs
 		{
 			u = f1Accurate(U0, x);
 			g_list->Add(x, u);
+			f_list->Add(x, v);
 
 			vcap = v;
 			S = 0.0;
@@ -1913,9 +1915,7 @@ private: System::Void button6_Click(System::Object^  sender, System::EventArgs^ 
 	dataGridView2->Rows->Clear();
 
 	for (i = 0; ((i < n)&&(x <= b)); i++)
-	{	
-		f_list->Add(x, v);
-		
+	{					
 		if (i != 0)
 		{
 			vplus1 = RK4(x, v, h, 2);
@@ -1932,7 +1932,7 @@ private: System::Void button6_Click(System::Object^  sender, System::EventArgs^ 
 			if (h < minH)
 			{
 				minH = h;
-				xminH = h;
+				xminH = x;
 			}
 			if (abs(S) > maxS)
 			{
@@ -1954,7 +1954,8 @@ private: System::Void button6_Click(System::Object^  sender, System::EventArgs^ 
 			dataGridView2->Rows[i]->Cells[7]->Value = c1;
 			dataGridView2->Rows[i]->Cells[8]->Value = c2;
 
-			v = vplus1;*/
+			v = vplus1;
+			f_list->Add(x, v);*/
 			//-------------------------------------------------
 			//С контролем локальной погрешности----------------
 			k = LPControl(S, Epsilon);
@@ -1987,7 +1988,11 @@ private: System::Void button6_Click(System::Object^  sender, System::EventArgs^ 
 				if (abs(S) > maxS)
 				{
 					maxS = abs(S);
-				}				
+				}
+				if ((i < n) || (x <= b))
+				{
+					sub = b - x;
+				}
 
 				dataGridView2->Rows->Add();
 				dataGridView2->Rows[i]->Cells[0]->Value = i;
@@ -2005,7 +2010,8 @@ private: System::Void button6_Click(System::Object^  sender, System::EventArgs^ 
 				{
 					c2++;
 				}
-				v = vplus1;
+				v = vcap;
+				f_list->Add(x, v);
 			}
 			else
 			{
@@ -2024,7 +2030,11 @@ private: System::Void button6_Click(System::Object^  sender, System::EventArgs^ 
 				if (abs(S) > maxS)
 				{
 					maxS = abs(S);
-				}				
+				}
+				if ((i < n) || (x <= b))
+				{
+					sub = b - x;
+				}
 
 				dataGridView2->Rows->Add();
 				dataGridView2->Rows[i]->Cells[0]->Value = i;
@@ -2038,11 +2048,13 @@ private: System::Void button6_Click(System::Object^  sender, System::EventArgs^ 
 				dataGridView2->Rows[i]->Cells[8]->Value = c2;
 
 				v = vcap;
+				f_list->Add(x, v);
 			}
 			//--------------------------------------------------------
 		}
 		else
 		{
+			f_list->Add(x, v);
 			vcap = v;
 			S = 0.0;
 
@@ -2098,7 +2110,7 @@ private: System::Void button6_Click(System::Object^  sender, System::EventArgs^ 
 	ref += str;
 	ref += "\r\n";
 	ref += "min hi=";
-	sprintf_s(str, "%.6lf", minH);
+	sprintf_s(str, "%.6e", minH);
 	ref += str;
 	ref += " при x=";
 	sprintf_s(str, "%.4lf", xminH);
@@ -2159,11 +2171,7 @@ private: System::Void button7_Click(System::Object^  sender, System::EventArgs^ 
 	dataGridView3->Rows->Clear();
 
 	for (i = 0; ((i < n)&&(x <= b)); i++)
-	{
-		f1_list->Add(x, v1);
-		f2_list->Add(x, v2);
-		f3_list->Add(x, PhP(v1, v2, a, c));
-
+	{		
 		if (i != 0)
 		{
 			v1plus1 = RK4System(x, v1, v2, h, a, c, 3);
@@ -2215,6 +2223,9 @@ private: System::Void button7_Click(System::Object^  sender, System::EventArgs^ 
 
 			v1 = v1plus1;
 			v2 = v2plus1;
+			f1_list->Add(x, v1);
+			f2_list->Add(x, v2);
+			f3_list->Add(v1, v2);
 			//---------------------------------------------------
 			//С контролем локальной погрешности------------------
 			/*k = LPControlSystem(S1, S2, Epsilon);
@@ -2280,8 +2291,11 @@ private: System::Void button7_Click(System::Object^  sender, System::EventArgs^ 
 				{
 					c2++;
 				}
-				v1 = v1plus1;
-				v2 = v2plus1;
+				v1 = v1cap;
+				v2 = v2cap;
+				f1_list->Add(x, v1);
+				f2_list->Add(x, v2);
+				f3_list->Add(v1, v2);
 			}
 			else
 			{
@@ -2327,11 +2341,17 @@ private: System::Void button7_Click(System::Object^  sender, System::EventArgs^ 
 
 				v1 = v1cap;
 				v2 = v2cap;
+				f1_list->Add(x, v1);
+				f2_list->Add(x, v2);
+				f3_list->Add(v1, v2);
 			}*/
 			//---------------------------------------------------------------
 		}
 		else
 		{
+			f1_list->Add(x, v1);
+			f2_list->Add(x, v2);
+			f3_list->Add(v1, v2);
 			v1cap = v1;
 			v2cap = v2;
 			S1 = 0.0;
@@ -2340,8 +2360,8 @@ private: System::Void button7_Click(System::Object^  sender, System::EventArgs^ 
 			dataGridView3->Rows->Add();
 			dataGridView3->Rows[i]->Cells[0]->Value = i;
 			dataGridView3->Rows[i]->Cells[1]->Value = x;
-			dataGridView3->Rows[i]->Cells[2]->Value = v1plus1;
-			dataGridView3->Rows[i]->Cells[3]->Value = v2plus1;
+			dataGridView3->Rows[i]->Cells[2]->Value = v1;
+			dataGridView3->Rows[i]->Cells[3]->Value = v2;
 			dataGridView3->Rows[i]->Cells[4]->Value = v1cap;
 			dataGridView3->Rows[i]->Cells[5]->Value = v2cap;
 			dataGridView3->Rows[i]->Cells[6]->Value = v1plus1 - v1cap;
