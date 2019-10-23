@@ -1174,7 +1174,7 @@ private: System::Windows::Forms::TextBox^  X1_Text3;
 			this->h_Text3->Name = L"h_Text3";
 			this->h_Text3->Size = System::Drawing::Size(100, 20);
 			this->h_Text3->TabIndex = 53;
-			this->h_Text3->Text = L"0,1";
+			this->h_Text3->Text = L"0,01";
 			// 
 			// label22
 			// 
@@ -2167,6 +2167,10 @@ private: System::Void button7_Click(System::Object^  sender, System::EventArgs^ 
 	string ref = "";
 
 	double xmin_limit = x - 0.05;
+	double v1min_limit = v1;
+	double v2min_limit = v2;
+	double v1max_limit = v1;
+	double v2max_limit = v2;
 	
 	dataGridView3->Rows->Clear();
 
@@ -2181,7 +2185,7 @@ private: System::Void button7_Click(System::Object^  sender, System::EventArgs^ 
 			S1 = CS(v1cap, v1plus1);						
 			S2 = CS(v2cap, v2plus1);
 			//Без контроля локальной погрешности-----------------
-			x = xInc(x, h);
+			/*x = xInc(x, h);
 
 			if (h > maxH)
 			{
@@ -2225,10 +2229,10 @@ private: System::Void button7_Click(System::Object^  sender, System::EventArgs^ 
 			v2 = v2plus1;
 			f1_list->Add(x, v1);
 			f2_list->Add(x, v2);
-			f3_list->Add(v1, v2);
+			f3_list->Add(v1, v2);*/
 			//---------------------------------------------------
 			//С контролем локальной погрешности------------------
-			/*k = LPControlSystem(S1, S2, Epsilon);
+			k = LPControlSystem(S1, S2, Epsilon);
 			if (k == -1)
 			{
 				while (k == -1)
@@ -2296,6 +2300,23 @@ private: System::Void button7_Click(System::Object^  sender, System::EventArgs^ 
 				f1_list->Add(x, v1);
 				f2_list->Add(x, v2);
 				f3_list->Add(v1, v2);
+
+				if (v1 < v1min_limit)
+				{
+					v1min_limit = v1;
+				}
+				if (v1 > v1max_limit)
+				{
+					v1max_limit = v1;
+				}
+				if (v2 < v2min_limit)
+				{
+					v2min_limit = v2;
+				}
+				if (v2 > v2max_limit)
+				{
+					v2max_limit = v2;
+				}
 			}
 			else
 			{
@@ -2344,7 +2365,24 @@ private: System::Void button7_Click(System::Object^  sender, System::EventArgs^ 
 				f1_list->Add(x, v1);
 				f2_list->Add(x, v2);
 				f3_list->Add(v1, v2);
-			}*/
+
+				if (v1 < v1min_limit)
+				{
+					v1min_limit = v1;
+				}
+				if (v1 > v1max_limit)
+				{
+					v1max_limit = v1;
+				}
+				if (v2 < v2min_limit)
+				{
+					v2min_limit = v2;
+				}
+				if (v2 > v2max_limit)
+				{
+					v2max_limit = v2;
+				}
+			}
 			//---------------------------------------------------------------
 		}
 		else
@@ -2364,8 +2402,8 @@ private: System::Void button7_Click(System::Object^  sender, System::EventArgs^ 
 			dataGridView3->Rows[i]->Cells[3]->Value = v2;
 			dataGridView3->Rows[i]->Cells[4]->Value = v1cap;
 			dataGridView3->Rows[i]->Cells[5]->Value = v2cap;
-			dataGridView3->Rows[i]->Cells[6]->Value = v1plus1 - v1cap;
-			dataGridView3->Rows[i]->Cells[7]->Value = v2plus1 - v2cap;
+			dataGridView3->Rows[i]->Cells[6]->Value = v1 - v1cap;
+			dataGridView3->Rows[i]->Cells[7]->Value = v2 - v2cap;
 			dataGridView3->Rows[i]->Cells[8]->Value = S1;
 			dataGridView3->Rows[i]->Cells[9]->Value = S2;
 			dataGridView3->Rows[i]->Cells[10]->Value = h;
@@ -2374,7 +2412,12 @@ private: System::Void button7_Click(System::Object^  sender, System::EventArgs^ 
 		}
 	}
 
-	double xmax_limit = x + 0.05;	
+	double xmax_limit = x + 0.05;
+
+	v1min_limit -= 0.5;
+	v1max_limit += 0.5;
+	v2min_limit -= 0.5;
+	v2max_limit += 0.5;
 
 	LineItem Curve1 = panel1->AddCurve("Численное решение U1(x)", f1_list, Color::Red, SymbolType::None);
 	LineItem Curve2 = panel2->AddCurve("Численное решение U2(x)", f2_list, Color::Blue, SymbolType::None);
@@ -2386,8 +2429,10 @@ private: System::Void button7_Click(System::Object^  sender, System::EventArgs^ 
 	panel2->XAxis->Min = xmin_limit;
 	panel2->XAxis->Max = xmax_limit;
 
-	panel3->XAxis->Min = xmin_limit;
-	panel3->XAxis->Max = xmax_limit;
+	panel3->XAxis->Min = v1min_limit;
+	panel3->XAxis->Max = v1max_limit;
+	panel3->YAxis->Min = v2min_limit;
+	panel3->YAxis->Max = v2max_limit;
 
 	U1Graph->AxisChange();
 	U1Graph->Invalidate();
