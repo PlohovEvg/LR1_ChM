@@ -2185,7 +2185,7 @@ private: System::Void button7_Click(System::Object^  sender, System::EventArgs^ 
 			S1 = CS(v1cap, v1plus1);						
 			S2 = CS(v2cap, v2plus1);
 			//Без контроля локальной погрешности-----------------
-			/*x = xInc(x, h);
+		/*	x = xInc(x, h);
 
 			if (h > maxH)
 			{
@@ -2229,7 +2229,24 @@ private: System::Void button7_Click(System::Object^  sender, System::EventArgs^ 
 			v2 = v2plus1;
 			f1_list->Add(x, v1);
 			f2_list->Add(x, v2);
-			f3_list->Add(v1, v2);*/
+			f3_list->Add(v1, v2);
+
+			if (v1 < v1min_limit)
+				{
+					v1min_limit = v1;
+				}
+				if (v1 > v1max_limit)
+				{
+					v1max_limit = v1;
+				}
+				if (v2 < v2min_limit)
+				{
+					v2min_limit = v2;
+				}
+				if (v2 > v2max_limit)
+				{
+					v2max_limit = v2;
+				}*/
 			//---------------------------------------------------
 			//С контролем локальной погрешности------------------
 			k = LPControlSystem(S1, S2, Epsilon);
