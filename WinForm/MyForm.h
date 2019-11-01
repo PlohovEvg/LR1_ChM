@@ -1117,7 +1117,7 @@ private: System::Windows::Forms::TextBox^  X1_Text3;
 			this->c_Text->Name = L"c_Text";
 			this->c_Text->Size = System::Drawing::Size(100, 20);
 			this->c_Text->TabIndex = 61;
-			this->c_Text->Text = L"0,25";
+			this->c_Text->Text = L"4,2";
 			// 
 			// label27
 			// 
@@ -1136,7 +1136,7 @@ private: System::Windows::Forms::TextBox^  X1_Text3;
 			this->a_Text->Name = L"a_Text";
 			this->a_Text->Size = System::Drawing::Size(100, 20);
 			this->a_Text->TabIndex = 59;
-			this->a_Text->Text = L"2,3";
+			this->a_Text->Text = L"0,01";
 			// 
 			// label24
 			// 
@@ -1155,7 +1155,7 @@ private: System::Windows::Forms::TextBox^  X1_Text3;
 			this->b_Text3->Name = L"b_Text3";
 			this->b_Text3->Size = System::Drawing::Size(100, 20);
 			this->b_Text3->TabIndex = 55;
-			this->b_Text3->Text = L"10";
+			this->b_Text3->Text = L"15";
 			// 
 			// label23
 			// 
@@ -1174,7 +1174,7 @@ private: System::Windows::Forms::TextBox^  X1_Text3;
 			this->h_Text3->Name = L"h_Text3";
 			this->h_Text3->Size = System::Drawing::Size(100, 20);
 			this->h_Text3->TabIndex = 53;
-			this->h_Text3->Text = L"0,01";
+			this->h_Text3->Text = L"0,0001";
 			// 
 			// label22
 			// 
@@ -1193,7 +1193,7 @@ private: System::Windows::Forms::TextBox^  X1_Text3;
 			this->Epsilon_Text3->Name = L"Epsilon_Text3";
 			this->Epsilon_Text3->Size = System::Drawing::Size(100, 20);
 			this->Epsilon_Text3->TabIndex = 51;
-			this->Epsilon_Text3->Text = L"0,0001";
+			this->Epsilon_Text3->Text = L"0,00001";
 			// 
 			// dataGridView3
 			// 
@@ -1291,7 +1291,7 @@ private: System::Windows::Forms::TextBox^  X1_Text3;
 			this->n_Text3->Name = L"n_Text3";
 			this->n_Text3->Size = System::Drawing::Size(100, 20);
 			this->n_Text3->TabIndex = 47;
-			this->n_Text3->Text = L"1000";
+			this->n_Text3->Text = L"10000";
 			// 
 			// label20
 			// 
@@ -1310,7 +1310,7 @@ private: System::Windows::Forms::TextBox^  X1_Text3;
 			this->U0_Text3->Name = L"U0_Text3";
 			this->U0_Text3->Size = System::Drawing::Size(100, 20);
 			this->U0_Text3->TabIndex = 45;
-			this->U0_Text3->Text = L"2";
+			this->U0_Text3->Text = L"10";
 			// 
 			// label19
 			// 
@@ -1330,7 +1330,7 @@ private: System::Windows::Forms::TextBox^  X1_Text3;
 			this->U2_Text->Name = L"U2_Text";
 			this->U2_Text->Size = System::Drawing::Size(100, 20);
 			this->U2_Text->TabIndex = 43;
-			this->U2_Text->Text = L"4";
+			this->U2_Text->Text = L"5";
 			// 
 			// pictureBox3
 			// 
@@ -2485,14 +2485,14 @@ private: System::Void button7_Click(System::Object^  sender, System::EventArgs^ 
 	ref += str;
 	ref += "\r\n";
 	ref += "max hi=";
-	sprintf_s(str, "%.6lf", maxH);
+	sprintf_s(str, "%.6e", maxH);
 	ref += str;
 	ref += " при x=";
 	sprintf_s(str, "%.4lf", xmaxH);
 	ref += str;
 	ref += "\r\n";		
 	ref += "min hi=";
-	sprintf_s(str, "%.6lf", minH);
+	sprintf_s(str, "%.6e", minH);
 	ref += str;
 	ref += " при x=";
 	sprintf_s(str, "%.4lf", xminH);
