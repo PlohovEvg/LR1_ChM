@@ -116,7 +116,7 @@ double f3(double u2)
 
 double f4(double u1, double u2, double a, double c)
 {
-	return -a*u2 + c*u1;
+	return -a*u2*u2 - c*u1;
 }
 
 double Vn1capSystem(double xn, double vn1, double vn2, double h, double a, double c, int m)

@@ -2185,7 +2185,7 @@ private: System::Void button7_Click(System::Object^  sender, System::EventArgs^ 
 			S1 = CS(v1cap, v1plus1);						
 			S2 = CS(v2cap, v2plus1);
 			//Без контроля локальной погрешности-----------------
-		/*	x = xInc(x, h);
+			/*x = xInc(x, h);
 
 			if (h > maxH)
 			{
