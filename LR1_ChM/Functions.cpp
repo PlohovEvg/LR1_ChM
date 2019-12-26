@@ -25,27 +25,25 @@ double RK4(double x, double vn, double h, int m)
 	return vnplus1;
 }
 
-double RK4System(double x, double vn1, double vn2, double h, double a, double c, int m)
+double* RK4System(double x, double *vn, double h, double a, double c)
 {
-	double vnplus1;
-	double k1, k2, k3, k4;
-	if (m == 3)
-	{
-		k1 = f3(vn2);
-		k2 = f3(vn2 + (h / 4.0)*k1);
-		k3 = f3(vn2 + (h / 2.0)*k2);
-		k4 = f3(vn2 + h*(k1 - 2 * k2 + 2 * k3));
-		vnplus1 = vn1 + (h / 6.0)*(k1 + 4 * k3 + k4);
-	}
-	else
-	{
-		k1 = f4(vn1, vn2, a, c);
-		k2 = f4(vn1 + (h / 4.0)*k1, vn2 + (h / 4.0)*k1, a, c);
-		k3 = f4(vn1 + (h / 2.0)*k2, vn2 + (h / 2.0)*k2, a, c);
-		k4 = f4(vn1 + h*(k1 - 2 * k2 + 2 * k3), vn2 + h*(k1 - 2 * k2 + 2 * k3), a, c);
-		vnplus1 = vn2 + (h / 6.0)*(k1 + 4 * k3 + k4);
-	}
-	
+	double *vnplus1;
+	double k1, k2, k3, k4, q1, q2, q3, q4;
+
+	vnplus1 = new double[2];
+
+	k1 = f3(vn[1]);
+	q1 = f4(vn[0], vn[1], a, c);
+	k2 = f3(vn[1] + (h / 4.0)*q1);
+	q2 = f4(vn[0] + (h / 4.0)*k1, vn[1] + (h / 4.0)*q1, a, c);
+	k3 = f3(vn[1] + (h / 2.0)*q2);
+	q3 = f4(vn[0] + (h / 2.0)*k2, vn[1] + (h / 2.0)*q2, a, c);
+	k4 = f3(vn[1] + h*(q1 - 2 * q2 + 2 * q3));
+	q4 = f4(vn[0] + h*(k1 - 2 * k2 + 2 * k3), vn[1] + h*(q1 - 2 * q2 + 2 * q3), a, c);
+
+	vnplus1[0] = vn[0] + (h / 6.0)*(k1 + 4 * k3 + k4);
+	vnplus1[1] = vn[1] + (h / 6.0)*(q1 + 4 * q3 + q4);
+
 	return vnplus1;
 }
 
@@ -75,7 +73,7 @@ double Vn1cap(double xn, double vn, double h, int m)
 	return vn1cap;
 }
 
-double CS(double _vn1cap, double _vn1)
+double CS1(double _vn1cap, double _vn1)
 {
 	return (_vn1cap - _vn1) / 15.0;
 }
@@ -119,28 +117,31 @@ double f4(double u1, double u2, double a, double c)
 	return -a*u2*u2 - c*u1;
 }
 
-double Vn1capSystem(double xn, double vn1, double vn2, double h, double a, double c, int m)
+double* Vn1capSystem(double xn, double *vn, double h, double a, double c)
 {
-	double v1n12, v2n12, xn12, vn1cap;
+	double *vn12, *vn1cap;
+	double xn12;
 
-	v1n12 = RK4System(xn, vn1, vn2, h / 2.0, a, c, 3);
-	v2n12 = RK4System(xn, vn1, vn2, h / 2.0, a, c, 4);
+	vn12 = new double[2];
+	vn1cap = new double[2];
+
+	vn12 = RK4System(xn, vn, h / 2.0, a, c);
 	xn12 = xInc(xn, h / 2.0);
-	vn1cap = RK4System(xn12, v1n12, v2n12, h / 2.0, a, c, m);	
+	vn1cap = RK4System(xn12, vn12, h / 2.0, a, c);
 
 	return vn1cap;
 }
 
-int LPControlSystem(double S1, double S2, double Eps)
+int LPControlSystem(double *_S, double Eps)
 {
 	double maxS;
-	if (abs(S1) >= abs(S2))
+	if (abs(_S[0]) >= abs(_S[1]))
 	{
-		maxS = abs(S1);
+		maxS = abs(_S[0]);
 	}
 	else
 	{
-		maxS = abs(S2);
+		maxS = abs(_S[1]);
 	}
 	if (maxS > Eps)
 	{
@@ -157,4 +158,15 @@ int LPControlSystem(double S1, double S2, double Eps)
 			return 0;
 		}
 	}
+}
+
+double* CS(double *_vncap, double *_vnplus1)
+{
+	double *S;
+	S = new double[2];
+
+	S[0] = (_vncap[0] - _vnplus1[0]) / 15.0;
+	S[1] = (_vncap[1] - _vnplus1[1]) / 15.0;
+
+	return S;
 }
